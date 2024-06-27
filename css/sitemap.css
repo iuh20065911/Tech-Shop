@@ -1,0 +1,26 @@
+  section ul {
+    margin: 0;
+    padding: 0;
+    background-color: #f1f1f1;
+  }
+  
+ section li a {
+    color: #000;
+    padding: 8px 16px;
+  } 
+  
+ section li a.active {
+    background-color: #04AA6D;
+    color: white;
+  }
+  
+ section li a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+  }
+
+  li ul li a{
+    position: relative;
+    left: 35px;
+    width: fit-content;
+  }

@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dịch vụ</title>
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../css/sanpham.css" />
+    <link rel="stylesheet" href="../css/trangchu.css" />
+    <link rel="stylesheet" href="../fontawesome/css/fontawesome.css" />
+    <link rel="stylesheet" href="../fontawesome/css/brands.css" />
+    <link rel="stylesheet" href="../fontawesome/css/solid.css" />
+    <script src="../js/main.js"></script>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../img/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="../img/favicon-16x16.png"
+    />
+  </head>
+  <body>
+    <!--header-->
+    <div class="container-fluid p-0 fixed-top">
+      <div class="navbar navbar-expand-md border justify-content-between">
+        <div class="navbar-brand">
+          <a href="../html/trangchu.html">
+            <div class="logo_web">Tech Shop</div>
+          </a>
+        </div>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#collapsibleNavbar"
+        >
+          <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+          <ul class="nav navbar-nav" style="font-weight: bold">
+            <li class="nav-item">
+              <a href="../html/trangchu.html" class="nav-link">Trang chủ</a>
+            </li>
+            <li class="nav-item">
+              <a href="../html/sanpham.html" class="nav-link">Sản phẩm</a>
+            </li>
+
+            <li class="nav-item">
+              <a href="../html/dichvu.html" class="nav-link">Dịch vụ</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Thành viên
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="../html/dangky.html">Đăng ký</a>
+                <a class="dropdown-item" href="../html/dangnhap.html"
+                  >Đăng nhập</a
+                >
+              </div>
+            </li>
+            <li class="nav-item">
+              <a href="about.html" class="nav-link">About</a>
+            </li>
+
+            <li class="nav-item">
+              <a id="timkim" class="nav-link" href="../html/sanpham.html"
+                ><form
+                  action=""
+                  class="search position-relative hide-tablet-mobile"
+                >
+                  <input
+                    type="text"
+                    class="input"
+                    placeholder="Bạn muốn mua gì !"
+                  />
+                  <button class="btn-search btn btn-dark text-light">
+                    <i class="fas fa-search"></i>
+                  </button></form
+              ></a>
+            </li>
+            <!-- Giỏ hàng -->
+            <li class="nav-item">
+              <a href="#" class="nav-link" id="cart-a"
+                ><i class="fa-regular fa-cart-shopping fa-xl" id="btn"></i
+                >(<span class="total-count"></span>2)</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!--header-->
+    <!--dichvu-->
+    <div class="container" style="padding-top: 70px">
+      <div class="row">
+        <div class="col-12 pt-4">
+          <div
+            style="
+              background-color: #f9f9f9;
+              box-shadow: 0 1px 2px rgb(0 0 0 / 10%);
+            "
+          >
+            <h3 style="padding: 10px; margin-left: 10px; font-family: inherit">
+              Dịch vụ
+            </h3>
+          </div>
+        </div>
+      </div>
+      <br /><br />
+      <div>
+        <h4 id="ghtn" style="text-align: center; color: blue">
+          GIAO HÀNG TẬN NHÀ - TẶNG QUÀ TẬN TAY <br />************************
+        </h4>
+        <h5>HƯỚNG DẪN MUA ĐIỆN THOẠI ONLINE</h5>
+        <br />
+        <div>
+          ✅BƯỚC 1: CHỌN SẢN PHẨM
+          <ul>
+            <li>
+              Chọn tại website:
+              <a href="../html/trangchu.html">https://Techshop.vn</a> (chi tiết
+              giá, màu, thông tin sản phẩm)
+            </li>
+          </ul>
+        </div>
+        <div>
+          ✅BƯỚC 2: LIÊN HỆ ĐẶT HÀNG
+          <ul>
+            <li>Hotline: 1800 6061</li>
+            <li>
+              Đặt hàng để lại thông tin trên website: tên, số điện thoại và địa
+              chỉ
+            </li>
+          </ul>
+        </div>
+        <div>
+          ✅BƯỚC 3: THANH TOÁN CHUYỂN KHOẢN
+          <ul>
+            <li>
+              Hóa đơn < 500k: để lại thông tin tên, sđt, địa chỉ và sản phẩm cần
+              đặt, shop sẽ ship COD tận nhà
+            </li>
+            <li>
+              Hóa đơn > 500k: vui lòng thanh toán chuyển khoản trước, hoặc đặt
+              cọc thẻ điện thoại và nhận hàng thanh toán tiền còn lại
+            </li>
+            <li>
+              Nếu bạn muốn tặng quà, thanh toán chuyển khoản trước, shop sẽ giao
+              hàng đến tận tay người nhận
+            </li>
+          </ul>
+        </div>
+        <br /><br />
+        <h5><i>💓Tài khoản ngân hàng</i></h5>
+        <ul>
+          <li>VIETCOMBANK-SỐ TK : 123456789 - TRẦN NGỌC SƠN</li>
+          <li>SACOMBANK-SỐ TK : 987654321 - VÕ HỒNG NGHĨA</li>
+        </ul>
+
+        <br /><br />
+        <h5><i>⏰Thời gian giao hàng</i></h5>
+        <ul>
+          <li>
+            Nội thành Hồ Chí Minh: 30-90 phút kể từ khi nhận được tiền chuyển
+            khoản, hoặc có thể ship hẹn giờ theo yêu cầu
+          </li>
+          <li>Tỉnh khác: (nhân viên bưu điện sẽ giao hàng đến tận nhà)</li>
+          <li>Ship từ 1-3 ngày nếu ở trung tâm thành phố, quận</li>
+          <li>Ship từ 2-5 ngày nếu ở huyện, xã</li>
+        </ul>
+      </div>
+
+      <div class="tragop">
+        <h4 style="text-align: center; color: blue">
+          Chính sách trả góp <br />************************
+        </h4>
+        <img src="../img/tragop1.png" alt="" />
+        <p>
+          Thủ tục mua hàng trả góp <br />
+          Hiện tại FPT Shop hợp tác với 5 công ty tài chính là HOME CREDIT
+          (PPF), FE CREDIT (VPBank), Mirae Asset, HD Saison và ACS để cung cấp
+          dịch vụ trả góp. Qúy Khách hàng có thể tham khảo thông tin chi tiết ở
+          bảng dưới đây:
+        </p>
+        <div class="row">
+          <div class="col-lf-5">
+            <img src="../img/tragop2.png" alt="" width="150" height="150" />
+          </div>
+          <div class="col-lg-5">
+            <ul>
+              <li>Thời gian duyệt: 10 phút.</li>
+              <li>Tuổi: 20 - 60 tuổi.</li>
+              <li>
+                Thủ tục:
+                <ul>
+                  <li>CMND/TCC.</li>
+                </ul>
+              </li>
+              <li>Kỳ hạn: 4 - 12 tháng.</li>
+            </ul>
+          </div>
+        </div>
+        <hr />
+
+        <div class="row">
+          <div class="col-lf-5">
+            <img src="../img/tragop3.png" alt="" width="150" height="150" />
+          </div>
+          <div class="col-lg-5">
+            <ul>
+              <li>Thời gian duyệt: 15 - 20 phút.</li>
+              <li>Tuổi: 20 - 60 tuổi.</li>
+              <li>
+                Thủ tục:
+                <ul>
+                  <li>CMND/TCC.</li>
+                </ul>
+              </li>
+              <li>Kỳ hạn: 6 - 12 tháng.</li>
+            </ul>
+          </div>
+        </div>
+
+        <hr />
+
+        <div class="row">
+          <div class="col-lf-5">
+            <img src="../img/tragop4.png" alt="" width="150" height="150" />
+          </div>
+          <div class="col-lg-5">
+            <ul>
+              <li>Thời gian duyệt: 15 - 20 phút.</li>
+              <li>
+                Tuổi: Khách hàng từ 20 tuổi – 60 tuổi. Trường hợp SV làm HĐ thì
+                có giấy tờ bảo lãnh của phụ huynh.
+              </li>
+              <li>
+                Thủ tục:
+                <ul>
+                  <li>Khoản vay ≤ 20 triệu: CMND/TCC + HK/BLX</li>
+                  <li>
+                    20 triệu < Khoản Vay < 30 triệu: CMND/TCC + HK/BLX + Hóa đơn
+                    điện nước /BHYT
+                  </li>
+                  <li>
+                    Khoản vay ≥ 30 triệu: CMND/TCC + HK/BLX + Hóa đơn điện nước
+                    + Chứng minh thu nhập
+                  </li>
+                </ul>
+              </li>
+              <li>
+                Chính sách trả góp Kỳ hạn: 6 - 18 tháng. (Riêng ĐTDĐ, MTB tối đa
+                12 tháng)
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <hr />
+
+        <ul style="list-style-type: none">
+          <li>Giải thích:</li>
+          <li>- CMND/TCC: Chứng minh thư nhân dân / Thẻ căn cước.</li>
+          <li>- GPLX/BLX: Giấy phép lái xe / Bằng lái xe.</li>
+          <li>- HK: Hộ khẩu.</li>
+          <li>- BHYT: Bảo hiểm y tế.</li>
+        </ul>
+
+        <hr />
+      </div>
+    </div>
+    <!--dichvu-->
+
+    <!--Footer-->
+    <div id="about">
+      <div class="container-fluid padding">
+        <div
+          class="row text-center padding"
+          style="
+            margin-top: 20px;
+            border-top: 2px dashed;
+            border-radius: 50px 50px 0 0;
+            background-color: #bcd2ee;
+          "
+        >
+          <div class="col-12">
+            <h2>Contact us</h2>
+          </div>
+          <div class="col-12 social padding">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-google-plus-g"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="container-fluid padding">
+          <div class="row">
+            <div class="col-md-4">
+              <hr class="light" />
+              <h5>HỆ THỐNG CỬA HÀNG</h5>
+              <hr class="light" />
+              <p>
+                1 Tech Shop, 203 Nguyễn Thái Sơn, Phường 5, Gò Vấp, Thành phố Hồ
+                Chí Minh
+              </p>
+              <p>Hotline : 1800 6601</p>
+              <p>
+                2 Tech Shop, 237A Đ. Phan Văn Trị, P. 11, Bình Thạnh, Thành phố
+                Hồ Chí Minh
+              </p>
+              <p>Hotline : 1800 6061</p>
+              <p>Email : techshop@.vn</p>
+            </div>
+            <div class="col-md-4">
+              <hr class="light" />
+              <h5>THỜI GIAN LÀM VIỆC</h5>
+              <hr class="light" />
+              <p>Thứ hai-Chủ nhật(Các ngày nghỉ lễ): 8am - 22pm</p>
+            </div>
+            <div class="col-md-4">
+              <hr class="light" />
+              <h5>HỖ TRỢ</h5>
+              <hr class="light" />
+              <p>
+                <a style="color: #d5d5d5" href="../html/about.html"
+                  >Giới thiệu & liên hệ</a
+                >
+              </p>
+
+              <p>
+                <a style="color: #d5d5d5" href="../html/dichvu.html"
+                  >Giao hàng tận nhà</a
+                >
+              </p>
+              <p>
+                <a style="color: #d5d5d5" href="../html/dichvu.html"
+                  >Chính sách trả góp</a
+                >
+              </p>
+            </div>
+            <div class="col-12 text-center">
+              <hr class="light-100" />
+              <h6>&copy; Bản quyền thuộc về TECHSHOP.VN</h6>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <!--Footer-->
+
+    <!--backtoptop-->
+    <span id="back-to-top">
+      <i class="fas fa-chevron-up"></i>
+    </span>
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="cart"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Giỏ hàng</h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+
+          <div class="modal-body">
+            <table class="show-cart table">
+              <tr>
+                <th></th>
+                <th>Tên sản phẩm</th>
+                <th>Số lượng</th>
+                <th></th>
+                <th>Thành tiền</th>
+              </tr>
+              <tbody id="datarow">
+                <tr>
+                  <td>
+                    <img
+                      src="../img/iphone-13PM-series.png"
+                      alt=""
+                      style="width: 80px; height: 80px"
+                    />
+                  </td>
+                  <td>Iphone 13 Pro max 128GB Chính Hãng - New</td>
+                  <td class="text-center">1</td>
+                  <td>
+                    <a
+                      id="delete_1"
+                      data-sp-ma="2"
+                      class="btn btn-danger btn-delete-sanpham"
+                    >
+                      <i class="fa fa-trash" aria-hidden="true"></i> Xóa
+                    </a>
+                  </td>
+                  <td>27.700.000₫</td>
+                </tr>
+
+                <tr>
+                  <td>
+                    <img
+                      src="../img/trangchu_noibat_galaxyS22.png"
+                      alt=""
+                      style="width: 80px; height: 80px"
+                    />
+                  </td>
+                  <td>Samsung Galaxy S22 Bora Purple</td>
+                  <td class="text-center">1</td>
+                  <td>
+                    <a id="delete_1" data-sp-ma="2" class="btn btn-danger">
+                      <i class="fa fa-trash" aria-hidden="true"></i> Xóa
+                    </a>
+                  </td>
+                  <td>15.990.000₫</td>
+                </tr>
+              </tbody>
+            </table>
+            <div class="text-right">
+              <strong>Tổng tiền:</strong> 43.690.000VNĐ<span
+                class="total-cart"
+              ></span>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-dismiss="modal"
+            >
+              Đóng
+            </button>
+            <button type="button" class="btn btn-primary">Đặt ngay</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

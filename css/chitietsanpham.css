@@ -1,0 +1,116 @@
+.left-side-product-box img {
+  width: 100%;
+}
+.left-side-product-box .sub-img img {
+  width: 83px;
+  height: 100px;
+}
+.right-side-pro-detail span {
+  font-size: 15px;
+}
+.right-side-pro-detail p {
+  font-size: 25px;
+  color: black;
+}
+.right-side-pro-detail .price-pro {
+  color: #e45641;
+}
+.right-side-pro-detail .tag-section {
+  font-size: 18px;
+  color: #5d4c46;
+}
+
+#myImg{
+  height: 424px;
+}
+.sub-img-main img {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.sub-img1 {
+  position: absolute;
+  top: 420px;
+  left: 5px;
+}
+.sub-img2 {
+  position: absolute;
+  top: 420px;
+  left: 65px;
+}
+
+.sub-img3 {
+  position: absolute;
+  top: 420px;
+  left: 125px;
+}
+
+.sub-img4 {
+  position: absolute;
+  top: 420px;
+  left: 185px;
+}
+
+.sub-img5 {
+  position: absolute;
+  top: 420px;
+  left: 245px;
+}
+
+.sub-img1,
+.sub-img2,
+.sub-img3,
+.sub-img4,
+.sub-img5 {
+  margin-top: 10px;
+  margin-left: 30px;
+  padding: 0;
+  width: 50px;
+  height: 94px;
+  border-radius: 5px;
+}
+
+.sub-img1 img {
+  border-radius: 5px;
+}
+
+.sub-img2 img {
+  border-radius: 5px;
+}
+
+.sub-img3 img {
+  border-radius: 5px;
+}
+
+.sub-img4 img {
+  border-radius: 5px;
+}
+.sub-img5 img {
+  border-radius: 5px;
+}
+
+.sub-img1:hover {
+  border: 2px solid red;
+  cursor: pointer;
+}
+
+.sub-img2:hover {
+  border: 2px solid red;
+  cursor: pointer;
+}
+
+.sub-img3:hover {
+  border: 2px solid red;
+  cursor: pointer;
+}
+
+.sub-img4:hover {
+  border: 2px solid red;
+  cursor: pointer;
+}
+
+.sub-img5:hover {
+  border: 2px solid red;
+  cursor: pointer;
+}

@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Sản Phẩm</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../css/sanpham.css" />
+    <link rel="stylesheet" href="../css/trangchu.css" />
+    <link rel="stylesheet" href="../fontawesome/css/fontawesome.css" />
+    <link rel="stylesheet" href="../fontawesome/css/brands.css" />
+    <link rel="stylesheet" href="../fontawesome/css/solid.css" />
+    <script src="../js/main.js"></script>
+    <!--JSsanpham-->
+
+    <script>
+      let sp1 = {
+        masp: 1,
+        tensp: "Iphone 13 Pro max 128GB Chính Hãng - New",
+        dongia: "27.700.000₫",
+        hinhanh: "../img/iphone-13PM-series.png",
+        hinhanh1: "../img/iphone-13-pro-max-blue.png",
+        hinhanh2: "../img/iphone-13-pro-max-gold.png",
+        hinhanh3: "../img/iphone-13-pro-max-graphite.png",
+        hinhanh4: "../img/iphone-13-pro-max-green.png",
+        hinhanh5: "../img/iphone-13-pro-max-silver.png",
+        mota: " <p>  Bộ vi xử lý: Apple A15 Bionic </p>\<p> Màn hình: 6.7 inch, OLED, Suuper Retina XDR, 2778 x 1284 Pixels</p> <p>Camera sau: 12.0 MP + 12.0 MP + 12.0 MP và Camera Selfie: 12.0 MP</p>\<p>Bộ nhớ trong :128 GB</p>"
+      };
+      let sp2 = {
+        masp: 2,
+        tensp: "Samsung Galaxy S22 Bora Purple ",
+        dongia: "15.990.000₫",
+        hinhanh: "../img/main_galaxy.png",
+        hinhanh1: "../img/trangchu_noibat_galaxyS22_1.png",
+        hinhanh2: "../img/trangchu_noibat_galaxyS22_2.png",
+        hinhanh3: "../img/trangchu_noibat_galaxyS22_3.png",
+        hinhanh4: "../img/trangchu_noibat_galaxyS22_4.png",
+        hinhanh5: "../img/trangchu_noibat_galaxyS22_5.png",
+        mota: " <p>  Bộ vi xử lý: Snapdragon 8 Gen 1 </p>\<p> Màn hình: 6.1 inch, Dynamic AMOLED 2X, FHD+, 1080 x 2340 Pixes</p> <p>Camera sau: 50.0 MP + 12.0 MP + 10.0 MP và Camera Selfie: 10.0 MP</p>\<p>Bộ nhớ trong :128 GB</p>"
+      };
+      let sp3 = {
+        masp: 3,
+        tensp: "Laptop Acer Nitro 5 ",
+        dongia: "21.490.000₫",
+        hinhanh: "../img/trangchu_noibat_nitro5.png",
+        hinhanh1: "../img/../img/nitro-1.png",
+        hinhanh2: "../img/nitro-2.png",
+        hinhanh3: "../img/nitro-3.png",
+        hinhanh4: "../img/nitro-4.png",
+        hinhanh5: "../img/nitro-5.png",
+        mota: " <p>  Màn hình: 15.6 inch, 1920 x 1080 Pixels, IPS, 144 Hz, Acer ComfyView LED-backlit </p>\<p> CPU: Intel, Core i5, 11400H</p> <p>RAM: 8 GB, DDR4, 3200 MHz</p>\<p>Ổ cứng : SSD 512 GB</p><p>VGA: NVIDIA GeForce GTX 1650 4GB; Intel UHD Graphics</p>"
+      };
+      let sp4 = {
+        masp: 4,
+        tensp: "OPPO Reno8 Z 5G 8GB - 256GB",
+        dongia: "10.490.000₫",
+        hinhanh: "../img/reno-main.png",
+        hinhanh1: "../img/reno-1.png",
+        hinhanh2: "../img/reno-2.png",
+        hinhanh3: "../img/reno-3.png",
+        hinhanh4: "../img/reno-4.png",
+        hinhanh5: "../img/reno-5.png",
+
+        mota: " <p>  Bộ vi xử lý: Snapdragon 695 5G mạnh mẽ </p>\<p>Màn hình : 6.43 inch AMOLED, FHD+, 1080 x 2400 Pixels </p> <p>Camera sau: 64.0 MP + 2.0 MP + 2.0 MP và Camera Selfie: 16.0 MP</p>\<p>Bộ nhớ trong :256 GB</p>"
+      };
+      let sp5 = {
+        masp: 5,
+        tensp: "Vivo Y22s 8GB-128GB",
+        dongia: "5.990.000₫",
+        hinhanh: "../img/vivo.png",
+        hinhanh1: "../img/../img/vivo1.png",
+        hinhanh2: "../img/vivo2.png",
+        hinhanh3: "../img/vivo3.png",
+        hinhanh4: "../img/vivo4.png",
+        hinhanh5: "../img/vivo5.png",
+        mota: " <p>  Bộ vi xử lý: Snapdragon 680 </p>\<p>Màn hình : 6.55 inch ,LCD, HD+, 720 x 1612 Pixels </p> <p>Camera sau: 50.0 MP + 2.0 MP và Camera Selfie: 8.0 MP</p>\<p>Bộ nhớ trong: 128 GB</p>"
+      };
+      let sp6 = {
+        masp: 6,
+        tensp: "Xiaomi Redmi Note 11 4GB - 128GB ",
+        dongia: "4.490.000₫",
+        hinhanh: "../img/xiaomi.png",
+        hinhanh1: "../img/xiaomi1.png",
+        hinhanh2: "../img/xiaomi2.png",
+        hinhanh3: "../img/xiaomi3.png",
+        hinhanh4: "../img/xiaomi4.png",
+        hinhanh5: "../img/xiaomi.png",
+        mota: " <p>  Bộ vi xử lý: Snapdragon 680 </p>\<p>Màn hình : 6.43 inch ,AMOLED, FHD+, 1080 x 2400 Pixels </p> <p>Camera sau: 50.0 MP + 8.0 MP + 2.0 MP + 2.0 MP và Camera Selfie: 13.0 MP</p>\<p>Bộ nhớ trong :128 GB</p>"
+      };
+      let sp7 = {
+        masp: 7,
+        tensp: "Gigabyte Gaming G5",
+        dongia: "19.290.000đ",
+        hinhanh: "../img/gigabyte.png",
+        hinhanh1: "../img/gigabyte1.png",
+        hinhanh2: "../img/gigabyte2.png",
+        hinhanh3: "../img/gigabyte3.png",
+        hinhanh4: "../img/gigabyte4.png",
+        hinhanh5: "../img/gigabyte5.png",
+        mota: " <p>  Màn hình: 15.6 inch, 1920 x 1080 Pixels, IPS, 144 Hz, 300 nits, Anti-glare LED-backlit </p>\<p> CPU: Intel, Core i5, 11400H</p> <p>RAM: 16 GB (2 thanh 8 GB), DDR4, 3200 MHz</p>\<p>Ổ cứng : SSD 512 GB</p><p>VGA: NVIDIA GeForce RTX 3050 4GB; Intel UHD Graphics</p>"
+      };
+      let sp8 = {
+        masp: 8,
+        tensp: "Laptop Asus TUF Gaming",
+        dongia: "17.490.000₫",
+        hinhanh: "../img/tufgaming.png",
+        hinhanh1: "../img/tufgaming1.png",
+        hinhanh2: "../img/tufgaming2.png",
+        hinhanh3: "../img/tufgaming3.png",
+        hinhanh4: "../img/tufgaming4.png",
+        hinhanh5: "../img/tufgaming5.png",
+        mota: " <p>  Màn hình: 15.6 inch, 1920 x 1080 Pixels, IPS, 144 Hz, 250 nits, Anti-Glare LED-Backlit Display </p>\<p> CPU: AMD, Ryzen 5, 4600H </p> <p>RAM: 8 GB (1 thanh 8 GB), DDR4, 3200 MHz</p>\<p>Ổ cứng : SSD 512 GB</p><p>VGA: NVIDIA GeForce GTX 1650 4GB; AMD Radeon Graphics</p>"
+      };
+
+      let dssp = [sp1, sp2, sp3, sp4, sp5, sp6, sp7, sp8];
+
+      function hienthiChitiet(masp) {
+        let sp = dssp.find((spTemp) => spTemp.masp === masp);
+        localStorage.setItem("masp", sp.masp);
+        localStorage.setItem("tensp", sp.tensp);
+        localStorage.setItem("dongia", sp.dongia);
+        localStorage.setItem("hinhanh", sp.hinhanh);
+        localStorage.setItem("hinhanh1", sp.hinhanh1);
+        localStorage.setItem("hinhanh2", sp.hinhanh2);
+        localStorage.setItem("hinhanh3", sp.hinhanh3);
+        localStorage.setItem("hinhanh4", sp.hinhanh4);
+        localStorage.setItem("hinhanh5", sp.hinhanh5);
+        localStorage.setItem("mota", sp.mota);
+      }
+
+      $(document).ready(function () {
+        function napSanpham(sp) {
+          let row =
+            "<div class='col-md-3' id='div2'>" +
+            "<div class='row' id='div3'>" +
+            "<p hidden>" +
+            sp.tensp +
+            "</p>" +
+            "</div>" +
+            "<div class='row'>" +
+            "<div>" +
+            "<img src='" +
+            sp.hinhanh +
+            "' alt='" +
+            sp.tensp +
+            "' class='rounded img-thumbnail'>" +
+            "<h6>" +
+            sp.tensp +
+            "</h6>" +
+            "<dl class='dl-horizontal'>" +
+            "<dt>Giá:</dt>" +
+            "<dd>" +
+            sp.dongia +
+            "</dd>" +
+            "<dt>Tình trạng:</dt>" +
+            "<dd> Còn hàng</dd>" +
+            "<a href='chitietsanpham.html' onclick='hienthiChitiet(" +
+            sp.masp +
+            ");' class='btn btn-primary' title='Chi tiết'>Chi tiết »</a>" +
+            "</div>" +
+            "</div>" +
+            "</div>";
+
+          $("#div1").append(row);
+        }
+
+        dssp.forEach(napSanpham);
+      });
+    </script>
+    <script>
+      $(document).ready(function () {
+        $("#myInput").keyup(function () {
+          var value = $(this).val().toLowerCase();
+          $("#div1 #div2").filter(function () {
+            $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1);
+          });
+        });
+      });
+    </script>
+
+    <!--JSsanpham-->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../img/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="../img/favicon-16x16.png"
+    />
+  </head>
+  <body>
+    <!--header-->
+    <div class="container-fluid p-0 fixed-top">
+      <div class="navbar navbar-expand-md border justify-content-between">
+        <div class="navbar-brand">
+          <a href="../html/trangchu.html">
+            <div class="logo_web">Tech Shop</div>
+          </a>
+        </div>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#collapsibleNavbar"
+        >
+          <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+          <ul class="nav navbar-nav" style="font-weight: bold">
+            <li class="nav-item">
+              <a href="../html/trangchu.html" class="nav-link">Trang chủ</a>
+            </li>
+            <li class="nav-item">
+              <a href="../html/sanpham.html" class="nav-link">Sản phẩm</a>
+            </li>
+
+            <li class="nav-item">
+              <a href="../html/dichvu.html" class="nav-link">Dịch vụ</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Thành viên
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="../html/dangky.html">Đăng ký</a>
+                <a class="dropdown-item" href="../html/dangnhap.html"
+                  >Đăng nhập</a
+                >
+              </div>
+            </li>
+            <li class="nav-item">
+              <a href="about.html" class="nav-link">About</a>
+            </li>
+
+            <li class="nav-item">
+              <a id="timkim" class="nav-link" href="../html/sanpham.html"
+                ><form
+                  action=""
+                  class="search position-relative hide-tablet-mobile"
+                >
+                  <input
+                    type="text"
+                    class="input"
+                    placeholder="Bạn muốn mua gì !"
+                  />
+                  <button class="btn-search btn btn-dark text-light">
+                    <i class="fas fa-search"></i>
+                  </button></form
+              ></a>
+            </li>
+            <!-- Giỏ hàng -->
+            <li class="nav-item">
+              <a href="#" class="nav-link" id="cart-a"
+                ><i class="fa-regular fa-cart-shopping fa-xl" id="btn"></i
+                >(<span class="total-count"></span>2)</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!--header-->
+
+    <!--Sản phẩm-->
+    <div class="container" style="padding-top: 70px">
+      <div class="container pt-4">
+        <div
+          class="row"
+          style="
+            background-color: #f9f9f9;
+            box-shadow: 0 1px 2px rgb(0 0 0 / 10%);
+          "
+        >
+          <div class="col-8">
+            <h3 style="padding: 10px; margin-left: 10px; font-family: inherit">
+              Sản phẩm
+            </h3>
+          </div>
+          <form class="form-inline col-4 justify-content-xl-end">
+            <div class="input-group">
+              <input
+                type="text"
+                class="form-control"
+                id="myInput"
+                placeholder="Search"
+              />
+              <div class="input-group-append">
+                <button type="button" class="btn btn-secondary">
+                  <i class="fa fa-search"></i>
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="row products" id="div1">
+          <!--Jssanpham-->
+        </div>
+      </div>
+      <!--navigation-->
+      <nav aria-label="Page navigation example">
+        <ul class="pagination justify-content-center">
+          <li class="page-item disabled">
+            <a class="page-link" href="#" tabindex="-1">Previous</a>
+          </li>
+          <li class="page-item active"><a class="page-link" href="#">1</a></li>
+          <li class="page-item"><a class="page-link" href="#">2</a></li>
+          <li class="page-item"><a class="page-link" href="#">3</a></li>
+          <li class="page-item">
+            <a class="page-link" href="#">Next</a>
+          </li>
+        </ul>
+      </nav>
+      <!--navigation-->
+    </div>
+    <!--Sản phẩm-->
+
+    <!--footer-->
+    <!--Footer-->
+    <div id="about">
+      <div class="container-fluid padding">
+        <div
+          class="row text-center padding"
+          style="
+            margin-top: 20px;
+            border-top: 2px dashed;
+            border-radius: 50px 50px 0 0;
+            background-color: #bcd2ee;
+          "
+        >
+          <div class="col-12">
+            <h2>Contact us</h2>
+          </div>
+          <div class="col-12 social padding">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-google-plus-g"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="container-fluid padding">
+          <div class="row">
+            <div class="col-md-4">
+              <hr class="light" />
+              <h5>HỆ THỐNG CỬA HÀNG</h5>
+              <hr class="light" />
+              <p>
+                1 Tech Shop, 203 Nguyễn Thái Sơn, Phường 5, Gò Vấp, Thành phố Hồ
+                Chí Minh
+              </p>
+              <p>Hotline : 1800 6601</p>
+              <p>
+                2 Tech Shop, 237A Đ. Phan Văn Trị, P. 11, Bình Thạnh, Thành phố
+                Hồ Chí Minh
+              </p>
+              <p>Hotline : 1800 6061</p>
+              <p>Email : techshop@.vn</p>
+            </div>
+            <div class="col-md-4">
+              <hr class="light" />
+              <h5>THỜI GIAN LÀM VIỆC</h5>
+              <hr class="light" />
+              <p>Thứ hai-Chủ nhật(Các ngày nghỉ lễ): 8am - 22pm</p>
+            </div>
+            <div class="col-md-4">
+              <hr class="light" />
+              <h5>HỖ TRỢ</h5>
+              <hr class="light" />
+              <p>
+                <a style="color: #d5d5d5" href="../html/about.html"
+                  >Giới thiệu & liên hệ</a
+                >
+              </p>
+              <p>
+                <a style="color: #d5d5d5" href="../html/dichvu.html"
+                  >Giao hàng tận nhà</a
+                >
+              </p>
+              <p>
+                <a style="color: #d5d5d5" href="../html/dichvu.html"
+                  >Chính sách trả góp</a
+                >
+              </p>
+            </div>
+            <div class="col-12 text-center">
+              <hr class="light-100" />
+              <h6>&copy; Bản quyền thuộc về TECHSHOP.VN</h6>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <!--Footer-->
+    <!--backtoptop-->
+    <span id="back-to-top">
+      <i class="fas fa-chevron-up"></i>
+    </span>
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="cart"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Giỏ hàng</h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+
+          <div class="modal-body">
+            <table class="show-cart table">
+              <tr>
+                <th></th>
+                <th>Tên sản phẩm</th>
+                <th>Số lượng</th>
+                <th></th>
+                <th>Thành tiền</th>
+              </tr>
+              <tbody id="datarow">
+                <tr>
+                  <td>
+                    <img
+                      src="../img/iphone-13PM-series.png"
+                      alt=""
+                      style="width: 80px; height: 80px"
+                    />
+                  </td>
+                  <td>Iphone 13 Pro max 128GB Chính Hãng - New</td>
+                  <td class="text-center">1</td>
+                  <td>
+                    <a
+                      id="delete_1"
+                      data-sp-ma="2"
+                      class="btn btn-danger btn-delete-sanpham"
+                    >
+                      <i class="fa fa-trash" aria-hidden="true"></i> Xóa
+                    </a>
+                  </td>
+                  <td>27.700.000₫</td>
+                </tr>
+
+                <tr>
+                  <td>
+                    <img
+                      src="../img/trangchu_noibat_galaxyS22.png"
+                      alt=""
+                      style="width: 80px; height: 80px"
+                    />
+                  </td>
+                  <td>Samsung Galaxy S22 Bora Purple</td>
+                  <td class="text-center">1</td>
+                  <td>
+                    <a id="delete_1" data-sp-ma="2" class="btn btn-danger">
+                      <i class="fa fa-trash" aria-hidden="true"></i> Xóa
+                    </a>
+                  </td>
+                  <td>15.990.000₫</td>
+                </tr>
+              </tbody>
+            </table>
+            <div class="text-right">
+              <strong>Tổng tiền:</strong> 43.690.000VNĐ<span
+                class="total-cart"
+              ></span>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-dismiss="modal"
+            >
+              Đóng
+            </button>
+            <button type="button" class="btn btn-primary">Đặt ngay</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

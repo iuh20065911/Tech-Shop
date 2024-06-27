@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Đăng ký </title>
+	<meta charset="utf-8" />
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../css/sanpham.css">
+    <link rel="stylesheet" href="../css/trangchu.css">
+    <link rel="stylesheet" href="../fontawesome/css/fontawesome.css" />
+    <link rel="stylesheet" href="../fontawesome/css/brands.css" />
+    <link rel="stylesheet" href="../fontawesome/css/solid.css" /> 
+    <script src="../js/main.js"></script>
+    <script>
+function kiemtratendangnhap(){
+            let hoten = document.getElementById("txtTendangnhap").value;
+            //ten dang nhap
+            let regexTenDN = /^[A-Za-z0-9_\.]{6,32}$/;
+
+            if(hoten.trim() === ''){
+                document.getElementById("tbTendangnhap").innerHTML = "Tên đăng nhập bắt buộc nhập"
+                return false;
+            }
+            if(hoten.trim() !== '' && !regexTenDN.test(hoten) ){
+                document.getElementById("tbTendangnhap").innerHTML = "Phải lớn hơn 6 kí tự, kí tự đặc biệt @!-_ "
+                return false;
+            }
+                document.getElementById("tbTendangnhap").innerHTML = "";
+            return true;
+        }
+        function kiemtraemail(){
+            let email = document.getElementById("txtemail").value;
+            let regexEmail = /^([a-z0-9@_-!])+(@gmail.com)$/;
+
+            if(email.trim() === ''){
+                document.getElementById("tbemail").innerHTML = "Địa chỉ email bắt buộc nhập"
+                return false;
+            }
+
+            if(email.trim() !== '' && !regexEmail.test(email) ){
+                document.getElementById("tbemail").innerHTML = "Email phải đúng định dạng"
+                return false;
+            }    
+            document.getElementById("tbemail").innerHTML = "";
+            return true;
+        }
+        function kiemtramatkhau(){
+            let matkhau = document.getElementById("txtmatkhau").value;
+            //mat khau
+            let regexPassword = /^[a-zA-Z0-9_@-!]{6,32}$/;
+
+            if(matkhau.trim() ===''){
+                document.getElementById("tbmatkhau").innerHTML = " Mật khậu bắt buộc nhập"
+                return false;
+            }
+            if(matkhau.trim() !== '' && !regexPassword.test(matkhau) ){
+                document.getElementById("tbmatkhau").innerHTML =  "Phải có ký tự chữ, số và ít nhất là 6 ký tự, kí tự đặc biệt:@!_-"
+                return false;
+            } 
+
+            document.getElementById("tbmatkhau").innerHTML = "*"
+            return true;
+        }
+        function xacnhanmatkhau(){
+            let xacnhanmatkhau = document.getElementById("txtxacnhanmatkhau").value;
+            
+            if(xacnhanmatkhau.trim() ===''){
+                document.getElementById("tbxacnhanmatkhau").innerHTML = "Vui lòng xác nhận mật khẩu"
+                return false;
+            }
+           if (document.getElementById("txtmatkhau").value !== document.getElementById("txtxacnhanmatkhau").value){
+            document.getElementById("tbxacnhanmatkhau").innerHTML = "Mật khẩu xác nhận không đúng"
+                return false;
+           }
+            document.getElementById("tbxacnhanmatkhau").innerHTML = "*"
+            return true;
+        }
+        function kiemtraphone(){
+            let xacnhandt  = document.getElementById("txtphone").value;
+            regexphone =/^(0?)(3[2-9]|5[6|8|9]|7[0|6-9]|8[0-6|8|9]|9[0-4|6-9])[0-9]{7}$/;
+            
+            if(xacnhandt.trim() ===''){
+                document.getElementById("tbphone").innerHTML = "Vui lòng nhập số điện thoại"
+                return false;
+            }
+            if(xacnhandt.trim() !== '' && !regexphone.test(xacnhandt) ){
+                document.getElementById("tbphone").innerHTML =  "Số điện thoại không đúng định dạng"
+                return false;
+            }
+           
+            document.getElementById("tbphone").innerHTML = "*"
+            return true;
+        }
+        function dangky(){
+            if (!kiemtratendangnhap() || !kiemtraemail() ||!kiemtramatkhau() || !xacnhanmatkhau()){
+                
+                return false;
+            }
+            
+
+            alert("Đăng ký thành công");
+            return true;
+        
+        }
+        
+    </script>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../img/favicon-16x16.png">
+</head>
+<body >
+   <!--header-->
+   <div class="container-fluid p-0 fixed-top">
+    <div class="navbar navbar-expand-md border justify-content-between ">
+        <div class="navbar-brand"><a href="../html/trangchu.html">            <div class="logo_web">Tech Shop</div>
+        </a></div>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+          <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+          <ul class="nav navbar-nav" style="font-weight:bold ;">
+              <li class="nav-item"><a href="../html/trangchu.html" class="nav-link">Trang chủ</a></li>
+              <li class="nav-item"><a href="../html/sanpham.html" class="nav-link">Sản phẩm</a></li>
+              
+              <li class="nav-item"><a href="../html/dichvu.html" class="nav-link">Dịch vụ</a></li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Thành viên
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="../html/dangky.html">Đăng ký</a>
+                  <a class="dropdown-item" href="../html/dangnhap.html">Đăng nhập</a>
+                </div>
+              </li>
+              <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+            
+              <li class="nav-item"><a id="timkim" class="nav-link" href="../html/sanpham.html"><form
+                action=""
+                class="search position-relative hide-tablet-mobile"
+              >
+                <input
+                  type="text"
+                  class="input"
+                  placeholder="Bạn muốn mua gì !"
+                />
+                <button class="btn-search btn btn-dark text-light">
+                  <i class="fas fa-search"></i>
+                </button></form
+            ></a></li>
+               <!-- Giỏ hàng -->
+               <li class="nav-item">
+                <a href="#" class="nav-link" id="cart-a"
+                  ><i class="fa-regular fa-cart-shopping fa-xl" id="btn"></i
+                  >(<span class="total-count"></span>2)</a
+                >
+              </li>
+          </ul>
+          
+          
+        </div>
+    </div>
+  </div>
+<!--header-->
+        
+<!--fromdangky-->
+        <div class="row pt-5" style=>
+            <div class="col-4 pl-5">
+
+                <img class="mt-5" src="../img/logo.png" alt="logo" width="400" height="220"><br><br>
+                <h3 class="text-center"><i>Hotline: 1800 6061 - 1800 6601</i></h3><br>
+                <h3 class="text-center"><i>Đăng ký thành viên</i> <br/> <i>đễ được thêm nhiều ưu đãi🙆🙆</i></h3>
+                <br/>
+                <br/>
+               
+            </div>
+                <div class="col-8">
+                    <form action="">
+                            <div  class="row">
+                                <div class="col-3"></div>
+                            <div class="col-6">
+                                <h1 class="mt-5">Đăng ký thành viên</h1>
+                                <p class="mt-5 mb-5">Miễn phí và sẽ luôn như vậy.</p>
+                            </div>    
+                            </div>
+                    <div class="row mt-3">
+                        <div class="col-3 text-right">
+                            <label for="txtTendangnhap">Tên Đăng Nhập</label>    
+                        </div>
+                        <div class="col-6">
+                            <input type="text" id="txtTendangnhap" class="form-control" required="required" placeholder="Nhập vào tên đăng nhập"  onblur="return kiemtratendangnhap();">
+                        </div>
+                        <div class="col-3">
+                            <span id="tbTendangnhap" class="text-danger font-italic" style="font-size: 12px;">*</span>
+                        </div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col-3 text-right">
+                            <label for="txtemail">Địa chỉ email</label>    
+                        </div>
+                        <div class="col-6">
+                            <input type="email" class="form-control " name="txtemail" id="txtemail"  placeholder="example@gmail.com" onblur="return kiemtraemail();" >
+                        </div>
+                        <div class="col-3">
+                            <span id="tbemail" class="text-danger font-italic" style="font-size: 12px;">*</span>
+                        </div>
+                        
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col-3 text-right">
+                            <label for="txtemail">Điện thoại</label>    
+                        </div>
+                        <div class="col-6">
+                            <input type="tel" class="form-control " name="txtphone" id="txtphone"  placeholder="09xxxxxxxx" onblur="return kiemtraphone();" >
+                        </div>
+                        <div class="col-3">
+                            <span id="tbphone" class="text-danger font-italic" style="font-size: 12px;">*</span>
+                        </div>
+                        
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col-3 text-right">
+                            <label for="txtmatkhau">Mật khẩu</label>    
+                        </div>
+                        <div class="col-6">
+                            <input type="password" class="form-control " name="txtmatkhau" id="txtmatkhau"  placeholder="Nhập Vào mật khẩu" onblur="return kiemtramatkhau();">
+                        </div>
+                        <div class="col-3">
+                            <span id="tbmatkhau" class="text-danger font-italic" style="font-size: 12px;">*</span>
+                        </div>
+                        
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col-3 text-right">
+                            <label for="txtxacnhanmatkhau">Xác Nhận Mật khẩu</label>    
+                        </div>
+                        <div class="col-6">
+                            <input type="password" class="form-control " name="txtxacnhanmatkhau" id="txtxacnhanmatkhau"  placeholder="Nhập Lại mật khẩu" onblur="return xacnhanmatkhau();">
+                        </div>
+                        <div class="col-3">
+                            <span id="tbxacnhanmatkhau" class="text-danger font-italic" style="font-size: 12px;">*</span>
+                        </div>
+                        
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col-3"></div>
+                        <div class="col-6">
+                            <a href="../html/dangnhap.html"><button type="button" class="btn btn-success mt-2" onclick="return dangky();">Đăng ký</button></a>
+                        </div>
+                    </div>-
+                            
+                </form>
+                </div>
+        </div>
+
+<!--fromdangky-->
+  
+
+
+    <!--Footer-->
+    <div id="about">
+        <div class="container-fluid padding">
+          <div class="row text-center padding" style="margin-top: 20px; border-top: 2px dashed; border-radius: 50px 50px 0 0 ; background-color: #BCD2EE; ">
+              <div class="col-12" >
+                  <h2>Contact us</h2>
+              </div>
+              <div class="col-12 social padding">
+                  <a href="#"><i class="fab fa-facebook"></i></a>
+                  <a href="#"><i class="fab fa-twitter"></i></a>
+                  <a href="#"><i class="fab fa-google-plus-g"></i></a>
+                  <a href="#"><i class="fab fa-instagram"></i></a>
+                  <a href="#"><i class="fab fa-youtube"></i></a>
+              </div>
+          </div>
+             </div>
+        
+        
+             <footer>
+                <div class="container-fluid padding">
+                    <div class="row ">
+                        <div class="col-md-4 ">
+                            
+                            <hr class="light">
+                            <h5>HỆ THỐNG CỬA HÀNG</h5>
+                            <hr class="light">
+                            <p>1 Tech Shop, 203 Nguyễn Thái Sơn, Phường 5, Gò Vấp, Thành phố Hồ Chí Minh</p>
+                            <p>Hotline : 1800 6601</p>
+                            <p>2 Tech Shop, 237A Đ. Phan Văn Trị, P. 11, Bình Thạnh, Thành phố Hồ Chí Minh</p>
+                            <p>Hotline : 1800 6061</p>
+                            <p>Email : techshop@.vn</p>
+                        </div>
+                        <div class="col-md-4">
+                            <hr class="light">
+                            <h5>THỜI GIAN LÀM VIỆC</h5>
+                            <hr class="light">
+                            <p>Thứ hai-Chủ nhật(Các ngày nghỉ lễ): 8am - 22pm</p>
+                        </div>
+                        <div class="col-md-4">
+                            <hr class="light">
+                            <h5>HỖ TRỢ</h5>
+                            <hr class="light">  
+                            <p><a style="color:#d5d5d5;" href="../html/about.html">Giới thiệu & liên hệ</a></p>
+                            <p><a style="color:#d5d5d5;" href="../html/dichvu.html">Giao hàng tận nhà</a></p>
+                            <p>
+                                <a style="color: #d5d5d5" href="../html/dichvu.html"
+                                  >Chính sách trả góp</a
+                                >
+                              </p>
+        
+                        </div>
+                        <div class="col-12 text-center">
+                            <hr class="light-100">
+                            <h6>&copy; Bản quyền thuộc về TECHSHOP.VN</h6>
+                        </div>
+                    </div>
+                </div>
+                  </footer>
+      </div>
+     <!--Footer-->
+    
+<!--backtoptop-->
+<span id="back-to-top">
+    <i class="fas fa-chevron-up"></i>
+  </span>
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="cart"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Giỏ hàng</h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+
+          <div class="modal-body">
+            <table class="show-cart table">
+              <tr>
+                <th></th>
+                <th>Tên sản phẩm</th>
+                <th>Số lượng</th>
+                <th></th>
+                <th>Thành tiền</th>
+              </tr>
+              <tbody id="datarow">
+                <tr>
+                  <td>
+                    <img
+                      src="../img/iphone-13PM-series.png"
+                      alt=""
+                      style="width: 80px; height: 80px"
+                    />
+                  </td>
+                  <td>Iphone 13 Pro max 128GB Chính Hãng - New</td>
+                  <td class="text-center">1</td>
+                  <td>
+                    <a
+                      id="delete_1"
+                      data-sp-ma="2"
+                      class="btn btn-danger btn-delete-sanpham"
+                    >
+                      <i class="fa fa-trash" aria-hidden="true"></i> Xóa
+                    </a>
+                  </td>
+                  <td>27.700.000₫</td>
+                </tr>
+
+                <tr>
+                  <td>
+                    <img
+                      src="../img/trangchu_noibat_galaxyS22.png"
+                      alt=""
+                      style="width: 80px; height: 80px"
+                    />
+                  </td>
+                  <td>Samsung Galaxy S22 Bora Purple</td>
+                  <td class="text-center">1</td>
+                  <td>
+                    <a id="delete_1" data-sp-ma="2" class="btn btn-danger">
+                      <i class="fa fa-trash" aria-hidden="true"></i> Xóa
+                    </a>
+                  </td>
+                  <td>15.990.000₫</td>
+                </tr>
+              </tbody>
+            </table>
+            <div class="text-right">
+              <strong>Tổng tiền:</strong> 43.690.000VNĐ<span
+                class="total-cart"
+              ></span>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-dismiss="modal"
+            >
+              Đóng
+            </button>
+            <button type="button" class="btn btn-primary">Đặt ngay</button>
+          </div>
+        </div>
+      </div>
+    </div>
+</body>
+</html>

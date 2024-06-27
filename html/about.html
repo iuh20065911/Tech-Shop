@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About</title>
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../css/sanpham.css" />
+    <link rel="stylesheet" href="../css/trangchu.css" />
+    <link rel="stylesheet" href="../fontawesome/css/fontawesome.css" />
+    <link rel="stylesheet" href="../fontawesome/css/brands.css" />
+    <link rel="stylesheet" href="../fontawesome/css/solid.css" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../img/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="../img/favicon-16x16.png"
+    />
+  </head>
+  <body>
+    <!--header-->
+    <div class="container-fluid p-0 fixed-top">
+      <div class="navbar navbar-expand-md border justify-content-between">
+        <div class="navbar-brand">
+          <a href="../html/trangchu.html">
+            <div class="logo_web">Tech Shop</div>
+          </a>
+        </div>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#collapsibleNavbar"
+        >
+          <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+          <ul class="nav navbar-nav" style="font-weight: bold">
+            <li class="nav-item">
+              <a href="../html/trangchu.html" class="nav-link">Trang chủ</a>
+            </li>
+            <li class="nav-item">
+              <a href="../html/sanpham.html" class="nav-link">Sản phẩm</a>
+            </li>
+
+            <li class="nav-item">
+              <a href="../html/dichvu.html" class="nav-link">Dịch vụ</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Thành viên
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="../html/dangky.html">Đăng ký</a>
+                <a class="dropdown-item" href="../html/dangnhap.html"
+                  >Đăng nhập</a
+                >
+              </div>
+            </li>
+            <li class="nav-item">
+              <a href="about.html" class="nav-link">About</a>
+            </li>
+
+            <li class="nav-item">
+              <a id="timkim" class="nav-link" href="../html/sanpham.html"
+                ><form
+                  action=""
+                  class="search position-relative hide-tablet-mobile"
+                >
+                  <input
+                    type="text"
+                    class="input"
+                    placeholder="Bạn muốn mua gì !"
+                  />
+                  <button class="btn-search btn btn-dark text-light">
+                    <i class="fas fa-search"></i>
+                  </button></form
+              ></a>
+            </li>
+            <!-- Giỏ hàng -->
+            <li class="nav-item">
+              <a href="#" class="nav-link" id="cart-a"
+                ><i class="fa-regular fa-cart-shopping fa-xl" id="btn"></i
+                >(<span class="total-count"></span>2)</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!--header-->
+    <!--about-->
+    <div class="container" style="padding-top: 70px">
+      <div class="row">
+        <div class="col-12 pt-4">
+          <div
+            style="
+              background-color: #f9f9f9;
+              box-shadow: 0 1px 2px rgb(0 0 0 / 10%);
+            "
+          >
+            <h3 style="padding: 10px; margin-left: 10px; font-family: inherit">
+              Giới thiệu & liên hệ
+            </h3>
+          </div>
+        </div>
+      </div>
+      <div>
+        <h4>Công ty Cổ phần Bán lẻ Kỹ Thuật Số TechShop - TechShop.vn</h4>
+        <p>
+          <b>Công ty Cổ phần Bán lẻ Kỹ thuật số TechShop</b> được thành lập từ
+          năm 2012 tại Việt Nam. Hiện nay, Tech Shop đang sở hữu thêm chuỗi cửa
+          hàng phục vụ trên khắp 63 tỉnh thành phố Hồ Chí Minh.
+        </p>
+        <p>
+          Hệ thống bán lẻ Tech Shop: là chuỗi chuyên bán lẻ các sản phẩm kỹ
+          thuật số di động bao gồm điện thoại di động, máy tính bảng, laptop,
+          phụ kiện và dịch vụ công nghệ… .
+        </p>
+        <br /><br />
+        <div class="thanhvien">
+          <h4>Thành Viên Thực Hiện :</h4>
+          <h6>
+            ➥Trần Ngọc Sơn<br />
+            Msss: 20065911
+            <img src="../img/avatar-1.png" alt="" class="avatar1" />
+          </h6>
+          <h6 id="avatar_2">
+            ➥Võ Hồng Nghĩa <br />
+            Msss: 20060041
+            <img src="../img/avatar-2.png" alt="" class="avatar2" />
+          </h6>
+        </div>
+        <br /><br />
+        <h5>Hệ thống cửa hàng</h5>
+        <strong><i>Tại Hồ Chí Minh:</i></strong>
+        <strong><i>Một số của hàng tại khu vực Gò Vấp:</i></strong>
+        <ul>
+          <li>
+            1 Tech Shop, 203 Nguyễn Thái Sơn, Phường 5, Gò Vấp, Thành phố Hồ Chí
+            Minh
+          </li>
+          <li>Hotline : 1800 6601</li>
+          <li>
+            2 Tech Shop, 237A Đ. Phan Văn Trị, P. 11, Bình Thạnh, Thành phố Hồ
+            Chí Minh
+          </li>
+          <li>Hotline : 1800 6061</li>
+        </ul>
+        <strong>
+          <i><a href="trangchu.html">https://TechShop.vn/</a></i> </strong
+        ><br /><br />
+        <p>
+          <i
+            >Quý khách chú ý nhớ đúng địa chỉ webstite tránh mua nhầm thương
+            hiệu nhái, và nhầm shop giả mạo.<br />
+            Thành lập và bán những sản phẩm đầu tiên trên thị trường chưa phổ
+            biến. Và hiện tại Khoa học -Kỹ thuật ngày càng tiến bộ, vì thế Fpt
+            Shop đã không ngừng phát triển bản thân hơn. Và sau 10 năm, Tech
+            Shop đã được nhiều khách hàng biết đến, tin tưởng và sử dụng các sản
+            phẩm của shop. Hứa hẹn Tech shop sẽ mở thêm nhiều lĩnh vực để phục
+            vụ nhu cầu Khách Hàng
+          </i>
+        </p>
+        <br /><br />
+
+        <h5>Dịch vụ chu đáo</h5>
+        <ul>
+          <li>Giao Hàng Tận Nhà</li>
+
+          <li>Tặng Thiệp Miễn Phí</li>
+        </ul>
+        <br /><br /><br />
+        <h4>Nhân viên dễ thương & hết mình</h4>
+        <p>
+          Xin cảm ơn quý Khách Hàng đã tin tưởng sử dụng dịch vụ của TechShop.
+          Trong quá trình sử dụng dịch vụ nếu có điều gì sai sót mong khách hàng
+          thông cảm.<br />
+          Hẹn gặp Quý Khách tại Shop
+        </p>
+        <br /><br />
+        <h4>Liên Hệ:</h4>
+        <p>
+          ➥ Store HCM 1: 1 Tech Shop, 203 Nguyễn Thái Sơn, Phường 5, Gò Vấp,
+          Thành phố Hồ Chí Minh
+          <br />
+          ➥ Hotline: 1800 6601
+        </p>
+        <p>
+          ➥ Store HCM 2: 2 Tech Shop, 237A Đ. Phan Văn Trị, P. 11, Bình Thạnh,
+          Thành phố Hồ Chí Minh
+          <br />
+          ➥ Hotline: 1800 6061
+        </p>
+        <h3>Rất hân hạnh được phục vụ quý khách !!</h3>
+      </div>
+    </div>
+    <!--about-->
+
+    <!--Footer-->
+    <div id="about">
+      <div class="container-fluid padding">
+        <div
+          class="row text-center padding"
+          style="
+            margin-top: 20px;
+            border-top: 2px dashed;
+            border-radius: 50px 50px 0 0;
+            background-color: #bcd2ee;
+          "
+        >
+          <div class="col-12">
+            <h2>Contact us</h2>
+          </div>
+          <div class="col-12 social padding">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-google-plus-g"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="container-fluid padding">
+          <div class="row">
+            <div class="col-md-4">
+              <hr class="light" />
+              <h5>HỆ THỐNG CỬA HÀNG</h5>
+              <hr class="light" />
+              <p>
+                1 Tech Shop, 203 Nguyễn Thái Sơn, Phường 5, Gò Vấp, Thành phố Hồ
+                Chí Minh
+              </p>
+              <p>Hotline : 1800 6601</p>
+              <p>
+                2 Tech Shop, 237A Đ. Phan Văn Trị, P. 11, Bình Thạnh, Thành phố
+                Hồ Chí Minh
+              </p>
+              <p>Hotline : 1800 6061</p>
+              <p>Email : techshop@.vn</p>
+            </div>
+            <div class="col-md-4">
+              <hr class="light" />
+              <h5>THỜI GIAN LÀM VIỆC</h5>
+              <hr class="light" />
+              <p>Thứ hai-Chủ nhật(Các ngày nghỉ lễ): 8am - 22pm</p>
+            </div>
+            <div class="col-md-4">
+              <hr class="light" />
+              <h5>HỖ TRỢ</h5>
+              <hr class="light" />
+              <p>
+                <a style="color: #d5d5d5" href="../html/about.html"
+                  >Giới thiệu & liên hệ</a
+                >
+              </p>
+              <p>
+                <a style="color: #d5d5d5" href="../html/dichvu.html"
+                  >Giao hàng tận nhà</a
+                >
+              </p>
+              <p>
+                <a style="color: #d5d5d5" href="../html/dichvu.html"
+                  >Chính sách trả góp</a
+                >
+              </p>
+            </div>
+            <div class="col-12 text-center">
+              <hr class="light-100" />
+              <h6>&copy; Bản quyền thuộc về TECHSHOP.VN</h6>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <!--Footer-->
+    <!--backtoptop-->
+    <span id="back-to-top">
+      <i class="fas fa-chevron-up"></i>
+    </span>
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="cart"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Giỏ hàng</h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+
+          <div class="modal-body">
+            <table class="show-cart table">
+              <tr>
+                <th></th>
+                <th>Tên sản phẩm</th>
+                <th>Số lượng</th>
+                <th></th>
+                <th>Thành tiền</th>
+              </tr>
+              <tbody id="datarow">
+                <tr>
+                  <td>
+                    <img
+                      src="../img/iphone-13PM-series.png"
+                      alt=""
+                      style="width: 80px; height: 80px"
+                    />
+                  </td>
+                  <td>Iphone 13 Pro max 128GB Chính Hãng - New</td>
+                  <td class="text-center">1</td>
+                  <td>
+                    <a
+                      id="delete_1"
+                      data-sp-ma="2"
+                      class="btn btn-danger btn-delete-sanpham"
+                    >
+                      <i class="fa fa-trash" aria-hidden="true"></i> Xóa
+                    </a>
+                  </td>
+                  <td>27.700.000₫</td>
+                </tr>
+
+                <tr>
+                  <td>
+                    <img
+                      src="../img/trangchu_noibat_galaxyS22.png"
+                      alt=""
+                      style="width: 80px; height: 80px"
+                    />
+                  </td>
+                  <td>Samsung Galaxy S22 Bora Purple</td>
+                  <td class="text-center">1</td>
+                  <td>
+                    <a id="delete_1" data-sp-ma="2" class="btn btn-danger">
+                      <i class="fa fa-trash" aria-hidden="true"></i> Xóa
+                    </a>
+                  </td>
+                  <td>15.990.000₫</td>
+                </tr>
+              </tbody>
+            </table>
+            <div class="text-right">
+              <strong>Tổng tiền:</strong> 43.690.000VNĐ<span
+                class="total-cart"
+              ></span>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-dismiss="modal"
+            >
+              Đóng
+            </button>
+            <button type="button" class="btn btn-primary">Đặt ngay</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
